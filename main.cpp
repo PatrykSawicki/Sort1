@@ -31,9 +31,9 @@ Point::Point(std::string c_name, float xx, float yy, double dd)
 //--------------------------------------------------------------------------------------------------------------/
 void Point::enter_data()
 {
-   /* std::cout << "Point name: "; std::cin >> name;
+    std::cout << "Point name: "; std::cin >> name;
     std::cout << "Enter x: "; std::cin >> x;
-    std::cout << "Enter y: "; std::cin >> y;*/
+    std::cout << "Enter y: "; std::cin >> y;
 
     std::cin >> name >> x >> y;
 
@@ -62,18 +62,17 @@ void sort(std::vector<Point> &vp)
 //****************************************************************************************************************/
 
 
-
 int main()
 {
     int n, t; //t-tests, n-how many points,
     std::vector<Point> vp;
 
-    //std::cout << "Enter the number of tests: ";
+    std::cout << "Enter the number of tests: ";
     std::cin >> t;
 
     while(t)
     {
-        //std::cout << "Enter the number of points to be tested: ";
+        std::cout << "Enter the number of points to be tested: ";
         std::cin >> n;
 
         for(int i = 1 ; i <= n; i++)
