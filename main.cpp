@@ -8,7 +8,6 @@
 class Point
 {
 public:
-
     std::string name;
     float x, y;
     double dis;    //distance = (x * x + y * y);
@@ -16,8 +15,6 @@ public:
     Point(std::string = "A", float = 0, float = 0, double = 0);
 
     void enter_data();
-
-
 };
 
 Point::Point(std::string c_name, float xx, float yy, double dd)
@@ -36,7 +33,6 @@ void Point::enter_data()
     std::cout << "Enter y: "; std::cin >> y;
 
     std::cin >> name >> x >> y;
-
     dis = sqrt(x*x+y*y);
 }
 
@@ -81,7 +77,6 @@ int main()
             pkt1.enter_data();
             vp.push_back(pkt1);
         }
-
         sort(vp);
         std::cout << "\n";
 
